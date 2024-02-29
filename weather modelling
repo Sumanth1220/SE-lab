@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#define NUM_HOURS 24
+
+float calculate_next_temperature(float current_temperature, float previous_temperature) {
+    return (current_temperature + previous_temperature) / 2.0;
+}
+
+int main() {
+    float temperatures[NUM_HOURS] = {20.0};
+
+    for (int hour = 1; hour < NUM_HOURS; hour++) {
+        temperatures[hour] = calculate_next_temperature(temperatures[hour - 1], temperatures[hour - 1]);
+    }
+
+    printf("Hour\tTemperature (C)\n");
+    for (int hour = 0; hour < NUM_HOURS; hour++) {
+        printf("%d\t%.2f\n", hour, temperatures[hour]);
+    }
+
+    return 0;
+}
