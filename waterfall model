@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+void requirementsPhase();
+void designPhase();
+void implementationPhase();
+void testingPhase();
+void maintenancePhase();
+
+int main() {
+    printf("Waterfall Model Phases:\n");
+    requirementsPhase();
+    designPhase();
+    implementationPhase();
+    testingPhase();
+    maintenancePhase();
+
+    return 0;
+}
+
+void requirementsPhase() {
+    printf("Requirements Phase:\n");
+    printf("Gather and document project requirements.\n");
+    printf("Define project scope, goals, and objectives.\n");
+    printf("Analyze user needs and expectations.\n");
+    printf("\n");
+}
+
+void designPhase() {
+    printf("Design Phase:\n");
+    printf("Create system architecture and design documents.\n");
+    printf("Define system components and interfaces.\n");
+    printf("Develop data structures and algorithms.\n");
+    printf("\n");
+}
+
+void implementationPhase() {
+    printf("Implementation Phase:\n");
+    printf("Write code based on design specifications.\n");
+    printf("Translate design into programming language.\n");
+    printf("Develop modules and integrate components.\n");
+    printf("\n");
+}
+
+void testingPhase() {
+    printf("Testing Phase:\n");
+    printf("Verify system functionality and performance.\n");
+    printf("Execute test cases and identify defects.\n");
+    printf("Perform regression testing and bug fixing.\n");
+    printf("\n");
+}
+
+void maintenancePhase() {
+    printf("Maintenance Phase:\n");
+    printf("Provide ongoing support and updates.\n");
+    printf("Address user feedback and issues.\n");
+    printf("Enhance system features and functionality.\n");
+    printf("\n");
+}
